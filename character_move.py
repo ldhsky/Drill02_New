@@ -14,7 +14,6 @@ def render_frame(x,y):
     delay(0.03)
 
 def run_circle():
-    print('CIRCLE')
 
     cx, cy, r = 400, 300, 200
     for deg in range(0+90,360+90,5):
@@ -23,7 +22,6 @@ def run_circle():
         render_frame(x,y)
 
 def run_rectangle():
-    print('RECTANGLE')
 
     #bottom line
     for x in range(50,750+1,5):
