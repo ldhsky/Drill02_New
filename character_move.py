@@ -11,7 +11,7 @@ def render_frame(x,y):
     clear_canvas_now()
     grass.draw_now(400, 30)
     character.draw_now(x,y)
-    delay(0.1)
+    delay(0.03)
 
 def run_circle():
     print('CIRCLE')
@@ -28,13 +28,18 @@ def run_rectangle():
     #bottom line
     for x in range(50,750+1,5):
         render_frame(x,90) # x,y 위치에 캐릭터 그리는 함수
+
+    #right line
+    for y in range(90,550+1,5):
+        render_frame(750,y)
         
     #top line
     for x in range(750,50-1,-5):
         render_frame(x,550)
-        
 
-        
+    #left line
+    for y in range(550,90-1,-5):
+        render_frame(50,y)
 
 while True:
     #run_circle()
